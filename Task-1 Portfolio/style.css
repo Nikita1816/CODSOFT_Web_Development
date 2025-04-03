@@ -1,0 +1,296 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4);
+    color: #ff0000;
+    text-align: center;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Hero Box Styling */
+.hero-box {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: white;
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Text Styling */
+.hero-box h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.hero-box h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.hero-box p {
+    font-size: 1.2em;
+}
+
+/* Highlight Text */
+.highlight {
+    color: rgb(237, 38, 38);
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-box {
+        max-width: 90%;
+        padding: 30px;
+    }
+    .hero-box h1 {
+        font-size: 1.8em;
+    }
+    .hero-box h2 {
+        font-size: 1.5em;
+    }
+    .hero-box p {
+        font-size: 1em;
+    }
+}
+
+/* Profile Photo Container */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Moves the image slightly upwards */
+}
+
+/* Profile Photo Styling */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+/* About Me Section */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* About Me Bubble */
+.about-bubble {
+    background: linear-gradient(135deg, #ff9a9e, #ff7eb3);
+    color: white;
+    padding: 40px;
+    border-radius: 50px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    animation: float 3s ease-in-out infinite;
+    line-height: 1.6;
+}
+
+/* Text Styling */
+.about-bubble h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.about-bubble p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Floating Animation */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+
+/* Sections */
+.about, .skills, .projects, .contact {
+    padding: 50px 20px;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+/* Skills */
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill-box {
+    background: #ff9a9e;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* Projects */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-box {
+    background: #ff9a9e;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+//* Contact Section */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Contact Box Styling */
+.contact-box {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Contact Links Styling */
+.contact-box a {
+    color: rgb(227, 34, 34);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-box a:hover {
+    color: #ffeb3b;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-box {
+        max-width: 90%;
+        padding: 20px;
+    }
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+}
+/* Resume Section */
+.resume-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+/* Resume Bubble Button */
+.resume-bubble {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.resume-bubble:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Education Section */
+.education-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+/* Education Bubble Container */
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+/* Education Bubble Styling */
+.education-bubble {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.education-bubble:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
